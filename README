@@ -1,6 +1,11 @@
 This is a simple skeleton video answering application based on a FS Wiki "answer.js" example. 
 
-In this edit, Flite is jacked in as a placeholder for recorded announcments and WAV files are replaced with FSV, a native format to store audio (L16) and video (codec native) frames as seen inside RTP packets [2]. By restricting the channel to allow a single video codec only (ie: H263-1998) videomail compatibility between video clients is possible with an implicit audio-only fallback if otherwise. Note how Flite is not be perfect for the purpose (we use a callie-version) but its ok for this basic example to keep it flexible. The email attachment functionality is non-functional as FSV/RTP is not supported by any mediaplayer and no conversion utilities surfaced yet.
+In this edit, Flite is jacked in as a placeholder for recorded announcments and WAV files are replaced with FSV, 
+a native format to store audio (L16) and video (codec native) frames as seen inside RTP packets [2]. By restricting 
+the channel to allow a single video codec only (ie: H263-1998) videomail compatibility between video clients is 
+possible with an implicit audio-only fallback if otherwise. Note how Flite is not be perfect for the purpose 
+(we use a callie-version) but its ok for this basic example to keep it flexible. The email attachment functionality 
+is non-functional as FSV/RTP is not supported by any mediaplayer and no conversion utilities surfaced yet.
 
 To Install:
 
