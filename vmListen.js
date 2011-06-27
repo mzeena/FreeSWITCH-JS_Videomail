@@ -36,8 +36,7 @@
       // OPTIONAL - Prompt for user ID & PIN & Authorize Playback
       // session.execute("speak", "Please enter your 4 digits ID");
       // vmAccount = session.getDigits(4, "", 6000); /* Get 4 digits waiting 6 seconds*/
-      // REPLACE WITH YOUR FS HOST THE FOLLOWING LINE
-      // vmpass = apiExecute ("user_data", vmAccount + "@your.host.net param vm-password");
+      // vmpass = apiExecute ("user_data", vmAccount + " param vm-password");
       // session.execute("speak", "Please enter your 4 digits PIN");
       // pin = session.getDigits(4, "", 8000); /* Get 4 digits waiting 8 seconds*/
       // if (pin == vmpass ) { $auth = "1";} else { session.execute("speak", "Wrong PIN"); session.hangup(); exit(); }
