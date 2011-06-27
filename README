@@ -22,7 +22,7 @@
                ''  
                    
 
-This is a simple skeleton video answering application based on a FS Wiki "answer.js" example. 
+This is a simple skeleton video-capable answering machine application based on a FS Wiki "answer.js" example. 
 
 In this edit, Flite is jacked in as a placeholder for recorded announcments and WAV files are replaced with FSV, 
 a native format to store audio (L16) and video (codec native) frames as seen inside RTP packets [2]. By restricting 
