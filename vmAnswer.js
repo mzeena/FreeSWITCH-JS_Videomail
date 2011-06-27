@@ -98,11 +98,11 @@
      // session.streamFile(file, callback, callback_args, starting_sample_count);
      var vMGF = new File(vMailGreetingFile);
      if(vMGF.isFile) {
-        rtn = session.play_fsv(vMailGreetingFile, on_dtmf, "");
+        rtn = session.execute("play_fsv", vMailGreetingFile);
      } else {
         session.execute("speak", "Please leave a message after the tone");
      }
-     fsLogger("session.play_fsv rtn=[" + rtn + "]");
+     fsLogger("session.execute rtn=[" + rtn + "]");
   
      // verify that the caller is still here
      if (session.ready()) {
@@ -122,8 +122,8 @@
         // Caller still here?
         if (session.ready()) {
            var toDate=new Date();
-           rtn = session.record_fsv(tmp_Filename, on_dtmf, "", maxreclen, silencethreshold, silencehits);
-           fsLogger("", "session.record_fsv rtn=[" + rtn + "]");
+           rtn = session.execute("record_fsv", tmp_Filename);
+           fsLogger("", "session.execute rtn=[" + rtn + "]");
   
            // create meta file
            var fd = new File(dir + "/" + sv_uuid + ".meta");
