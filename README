@@ -1,3 +1,27 @@
+    ,     :      
+    .'''  `'''     
+    ''''` ''''.    
+    ,'''  .'''     
+     ''`   ''.     
+     ''`   ''.     
+     '':   ''      
+   ''''''''''''''  
+  '''''''''''''''  
+  ''           ''  
+  ''           ''  
+  ''           ''  
+  ''           ''  
+  ''           ''  
+  ''           ''  
+  '''''''''''''''  
+  .''''''''''''''  
+     ``````````''  
+               ''  
+               ''  
+               ''  
+               ''  
+                   
+
 This is a simple skeleton video answering application based on a FS Wiki "answer.js" example. 
 
 In this edit, Flite is jacked in as a placeholder for recorded announcments and WAV files are replaced with FSV, 
