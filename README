@@ -1,0 +1,12 @@
+This is a simple skeleton video answering application based on a FS Wiki "answer.js" example. 
+
+In this edit, Flite is jacked in as a placeholder for recorded announcments and WAV files are replaced with FSV, a native format to store audio (L16) and video (codec native) frames as seen inside RTP packets [2]. By restricting the channel to allow a single video codec only (ie: H263-1998) videomail compatibility between video clients is somewhat possible and audio-only fallback to what we started with. Note how Flite is not be perfect for the purpose (we use a callie-version) but its ok for this basic example to keep it flexible. All other possible improvements are... possible (except dumping the contents to a playable format for email attachment yet, sorry)
+
+Install:
+
+- Place all scripts under /usr/local/freeswitch/scripts/javascript/
+- Create writeable directory /var/spool/freeswitch
+- Create a dialplan entry using the included example
+
+For more info: http://www.qxip.net/mediawiki/index.php/Fs_js_vvm
+
