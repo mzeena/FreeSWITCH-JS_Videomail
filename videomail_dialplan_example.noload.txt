@@ -1,0 +1,18 @@
+<include>
+  <extension name="Local_VideoMail_rec">
+     <condition field="destination_number" expression="^(vmrec)$">
+       <action application="set" data="dialed_extension=$1"/>
+       <action application="export" data="dialed_extension=$1"/>
+       <action application="set" data="absolute_codec_string=PCMA,PCMU,H263-1998"/>
+       <action application="javascript" data="vmAnswer.js"/>
+     </condition>
+   </extension>
+   <extension name="Local_VideoMail_play">
+     <condition field="destination_number" expression="^(vmplay)$">
+       <action application="set" data="dialed_extension=$1"/>
+       <action application="export" data="dialed_extension=$1"/>
+       <action application="set" data="absolute_codec_string=PCMA,PCMU,H263-1998"/>
+       <action application="javascript" data="vmListen.js"/>
+     </condition>
+   </extension>
+</include>
