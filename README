@@ -35,7 +35,7 @@ To Install:
 
 - Place all scripts in /usr/local/freeswitch/scripts/javascript/
 - Create writeable directory /var/spool/freeswitch
-- Create a dialplan entry for the script using the included example
+- Create dialplan entries for the script and forwarding rules using the included example
 - Extend it
 
 For more info: http://www.qxip.net/mediawiki/index.php/Fs_js_vvm
