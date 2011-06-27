@@ -95,7 +95,7 @@
    function messagePlay(vmAccount,fileName) {
        var vmMessageFSV = fileName + ".fsv";
        session.execute("speak", "NowPlaying" + i+1);
-       session.play_fsv(vmMessageDir + "/" + vmAccount + "/" +  vmMessageFSV, play_dtmf, "", 0);
+       session.execute("play_fsv", vmMessageDir + "/" + vmAccount + "/" +  vmMessageFSV, play_dtmf, "", 0);
        fsLogger(i +" FILE ", fileName);
    }
    
@@ -141,7 +141,7 @@
    function messagePlay(vmAccount,fileName) {
        var vmMessageFSV = fileName + ".fsv";
        session.execute("speak", "NowPlaying" + i+1);
-       session.play_fsv(vmMessageDir + "/" + vmAccount + "/" +  vmMessageFSV, play_dtmf, "", 0);
+       session.execute("play_fsv", vmMessageDir + "/" + vmAccount + "/" +  vmMessageFSV, play_dtmf, "", 0);
        fsLogger(i +" FILE ", fileName);
    }
    
